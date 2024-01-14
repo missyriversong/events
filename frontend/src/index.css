@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+/* push down footer */
+footer {
+  margin-top: 80vh;
+  text-align: center;
+}
+
