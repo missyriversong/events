@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Nav, Navbar, NavDropdown, Image, Form} from 'react-bootstrap';
+import {Container, Nav, Navbar, NavDropdown, Image, Form, InputGroup} from 'react-bootstrap';
 
 //add search component
 //nav bar display contingent on guest vs. logged in  i.e. visible dropdown
@@ -15,14 +15,15 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-x">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/search">
-            <Form.Label htmlFor="searchAny"><i class="fa-solid fa-magnifying-glass"></i> Search</Form.Label>
+            <InputGroup size="sx" className="mb-3">
+            <Form.Label htmlFor="searchAny"> </Form.Label>
               <Form.Control
                 type="text"
                 id="searchAny"
                 aria-describedby="passwordHelpBlock"
+                placeholder="Search"
               />
-            </Nav.Link> 
+              </InputGroup>
             <Nav.Link href="/events">Find events</Nav.Link>
             <NavDropdown title="More..." id="basic-nav-dropdown">
               <NavDropdown.Item href="/create">Create event</NavDropdown.Item>
